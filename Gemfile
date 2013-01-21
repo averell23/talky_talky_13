@@ -9,6 +9,7 @@ gem 'jdbc-sqlite3'
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'slim'
 gem 'simple_form'
+gem 'therubyrhino'
 
 
 # Gems used only for assets and not required
