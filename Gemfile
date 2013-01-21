@@ -5,7 +5,8 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'jdbc-sqlite3'
+gem 'activerecord-jdbcsqlite3-adapter'
 gem 'slim'
 gem 'simple_form'
 
