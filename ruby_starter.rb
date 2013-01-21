@@ -30,7 +30,29 @@ class Fnord
 
 end
 
+# Inheritance
+class MoreStuff < Fnord
+
+  def foobar
+    "overrides parent method"
+  end
+
+end
+
+# Data types
+a_symbol = :something
+a_string = 'String'
+a_string_with_interpolation = "String #{a_string}"
+integer = 1234
+float = 12.34
+array = [1, 2, 3, 4]
+array.each { |el| puts el }
+hash = { one: 1, two: 2, three: 3, four: 4}
+hash[:one]
+hash[:five] = 5
+hash[:six]
+
 
 # Example calls
 
-method2 Fnord.new
+method2 Fnord.new(true)
