@@ -45,8 +45,11 @@ a_string = 'String'
 a_string_with_interpolation = "String #{a_string}"
 integer = 1234
 float = 12.34
-array = [1, 2, 3, 4]
-array.each { |el| puts el }
+array = [1, 2, 3, 4, "fiver"]
+crazy_number = 23
+array.each do |el| 
+  puts el * crazy_number
+end
 hash = { one: 1, two: 2, three: 3, four: 4}
 hash[:one]
 hash[:five] = 5
