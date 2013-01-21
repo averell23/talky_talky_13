@@ -9,19 +9,27 @@ end
 
 class Fnord
 
+  attr_accessor :happy
+  # Also attr_reader and attr_writer
+
+  def initialize(happy)
+    @happy = happy
+  end
+
   def foobar
     decide_foobar
   end
 
   def decide_foobar
-    if 1 != 2
+    if @happy
       "foobar"
     else
-      "Hellolo"
+      "sad"
     end
   end
 
 end
+
 
 # Example calls
 
