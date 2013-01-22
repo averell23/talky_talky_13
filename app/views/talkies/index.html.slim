@@ -1,12 +1,11 @@
-.span10.offset1
-  h2 Hello Talkie index
+h2 Hello Talkie index
 
-  p
-    a href=new_talky_path New Talky
+p
+  a href=new_talky_path New Talky
 
-  = render @talkies
+= render @talkies
 
-  / - @talkies.each do |t|
-  /  = render partial: 'talkie', object: t
+/ - @talkies.each do |t|
+/  = render partial: 'talkie', object: t
 
-  / = render partial: 'talkie', collection: @talkies
+/ = render partial: 'talkie', collection: @talkies
