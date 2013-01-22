@@ -1,7 +1,9 @@
 .span10.offset1
   h2 Hello Talkie index
 
-  - @talkies.each do |t|
-    dl.dl-horizontal
-      dt= l t.created_at, format: :short
-      dd= t.body
+  = render @talkies
+
+  / - @talkies.each do |t|
+  /  = render partial: 'talkie', object: t
+ 
+  / = render partial: 'talkie', collection: @talkies
