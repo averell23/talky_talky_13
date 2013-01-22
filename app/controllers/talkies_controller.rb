@@ -22,6 +22,7 @@ class TalkiesController < ApplicationController
 
   def make_talkie
     @talkie = Talkie.new(params[:talkie])
+    @talkie.user = current_user
   end
 
 end
