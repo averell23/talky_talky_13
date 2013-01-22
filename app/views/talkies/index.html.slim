@@ -1,4 +1,7 @@
-h1 Hello Talkie index
+.span10.offset1
+  h2 Hello Talkie index
 
-- @talkies.each do |t|
-  p= t.body
+  - @talkies.each do |t|
+    dl.dl-horizontal
+      dt= l t.created_at, format: :short
+      dd= t.body
