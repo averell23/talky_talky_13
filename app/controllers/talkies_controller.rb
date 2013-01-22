@@ -5,6 +5,9 @@ class TalkiesController < ApplicationController
 
   def index
     @talkies = Talkie.order('id DESC').limit(20)
+    if(params[:user_id])
+      @talkies = @talkies.where(user_id: params[:user_id])
+    end
   end
 
   def create
